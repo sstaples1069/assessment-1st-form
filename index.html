@@ -8,41 +8,43 @@
   </head>
 
   <body>
-    <div>
-      <label for="name">Name:</label>
-      <input
-        id="name"
-        type="text"
-        name="name"
-        placeholder="Please enter your name"
-      />
-    </div>
-
-    <div>
-      <label for="email">Email:</label>
-      <input
-        id="email"
-        type="text"
-        name="email"
-        pattern="/^[a-zA-Z0-9.!#$%&*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
-        placeholder="example1@domain.com"
-      />
-    </div>
-
-    <div>
-        <label for="form-message">Your message:</label>
-        <textarea
-          id="form-message"
-          name="message"
-          autofocus="on"
-          required
-          maxlength="200"
-          placeholder="How can I help you?"
-        ></textarea>
-      </div>
-
-      <button type="submit">Confirm</button>
-      <button type="reset">Redo</button>
-      
+    
+    <main>
+        <form>
+            <div>
+              <label for="name">Name:</label>
+              <input
+                id="name"
+                type="text"
+                name="name"
+                placeholder="Please enter your name"
+              />
+            </div>
+            <div>
+              <label for="email">Email:</label>
+              <input
+                id="email"
+                type="text"
+                name="email"
+                pattern="/^[a-zA-Z0-9.!#$%&*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
+                placeholder="example1@domain.com"
+              />
+            </div>
+            <div>
+                <label for="form-message">Your message:</label>
+                <textarea
+                  id="form-message"
+                  name="message"
+                  autofocus="on"
+                  required
+                  maxlength="200"
+                  placeholder="How can I help you?"
+                ></textarea>
+              </div>
+              <button type="submit">Confirm</button>
+              <button type="reset">Redo</button>
+            
+        </form>
+    </main>
   </body>
 </html>
