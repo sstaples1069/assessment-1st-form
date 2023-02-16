@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div>
+      <label for="name">Name:</label>
+      <input
+        id="name"
+        type="text"
+        name="name"
+        placeholder="Please enter your name"
+      />
+    </div>
+
+    <div>
+      <label for="email">Email:</label>
+      <input
+        id="email"
+        type="text"
+        name="email"
+        pattern="/^[a-zA-Z0-9.!#$%&*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
+        placeholder="example1@domain.com"
+      />
+    </div>
+
+    <div>
+        <label for="form-message">Your message:</label>
+        <textarea
+          id="form-message"
+          name="message"
+          autofocus="on"
+          required
+          maxlength="200"
+          placeholder="How can I help you?"
+        ></textarea>
+      </div>
+
+      <button type="submit">Confirm</button>
+      <button type="reset">Redo</button>
+      
+  </body>
+</html>
